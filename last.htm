@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600&display=swap" rel="stylesheet"> 
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+        height: 300mm;
+        width: 270mm;
+        /* to centre page on screen*/
+        margin-left: auto;
+        margin-right: auto;
+font-family: 'Dosis', sans-serif;
+font-size:10px;
+    }
+ 
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+  
+/*.grid-container{
+display:grid;
+grid-template-columns: 20% 20% 5% 15% 20% 20% ;
+}*/
+div{
+display:inline;
+    text-align:justify;  
+    text-justify:inter-character;
+word-break: break-all;
+}
+
+.item1 {
+  grid-column: 1/2;
+  grid-row: 1;
+text-align:justify;
+}
+/*.item2 {
+  grid-column: 2/span 5;
+  grid-row: 1;
+text-align:justify;
+}*/
+.item3
+{
+text-align:left;
+grid-column: 1/span 6;
+}
+
+.grid-item contact{
+grid-row:4;
+grid-column:1/ span 6; }
+.grid-item about{
+grid-row:5;
+grid-column:1/ span 6;}
+div.grid-item portfolio{
+grid-row:6;
+grid-column:1/ span 6; }
+div.grid-item experience{
+grid-row:7;
+grid-column:1/ span 6; }
+.grid-item education{
+grid-row:8;
+grid-column:1/ span 6; }
+.grid-item designskill{
+grid-row:9;
+grid-column:1/ span 6; }
+.grid-item language{
+grid-row:10;
+grid-column:1/ span 6; }
+.grid-item interest{
+grid-row:11;
+grid-column:1/ span 6; }
+h4{ font-size:18px;}
+ul.cnctlist li{ font-size:50px;}
+h6{font-size:30%;}
+.all{font-size:2%;}
+
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+     height: 842px;
+        width: 595px;
+        /* to centre page on screen*/
+        margin-left: auto;
+        margin-right: auto;
+  }
+div{
+display:inline;
+    text-align:justify;  
+    text-justify:inter-character;
+word-break: break-all;
+}
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+div{
+display:inline;
+   text-align:justify;  
+    text-justify:inter-character;
+word-break: break-all;
+}
+}
+
+.grid-container {
+  display: grid;
+grid-template-columns: 15% 20% 5% 15% 20% 20%;
+  grid-gap: 1px;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
+
+.grid-item {
+  /*background-color:#ddd;*/
+  text-align: left;
+  padding: 10px;
+  font-size: 30px;
+line-break:break-word;
+overflow:auto
+border:5px none 0;
+}
+.grid-item:nth-child(old){
+background-color:#eee;
+}
+/*.header{
+grid-column:1/ span 2;
+grid-row:1/span 2;
+}*/
+
+.item1 {
+/*grid-template-columns: 75px auto auto auto;*/
+  grid-column: 1 ;
+  grid-row: 1;
+text-align:justify;
+  border:3px solid blue;
+  color:blue;
+  pading:1px;
+}
+.header
+{
+text-transform: capitalize;
+}
+
+.item2 {
+  grid-column: 2/span 5;
+  grid-row: 1;
+text-align:justify;
+}
+.item3
+{
+text-align:left;
+grid-column: 1/span 3;
+}
+.item4
+{
+text-align:left;
+grid-column: 4/span 3;
+grid-row:3;
+}
+.about
+{
+text-align:left;
+grid-column: 4/ span 3;
+grid-row:3;
+}
+.experience
+{
+text-align:left;
+grid-column: 4/span 3;
+}
+.education
+{
+text-align:left;
+grid-column: 4/span 3;
+}
+.languages
+{
+text-align:left;
+grid-column: 4/span 3;
+}
+ 
+}
+.dob
+{
+grid-column:4/span 1;
+}
+.nat
+{
+grid-column:5/span 1;
+}
+.sex
+{
+grid-column:6/span 1;
+}
+.contact{
+grid-row:3;
+grid-column:1/span 3;
+}
+.portfolio{
+grid-row:4;
+grid-column:1/span 3;
+}
+.designskill
+{
+grid-row:5;
+grid-column:1/span 3;
+}
+.softwareskills
+{
+grid-row:6;
+grid-column:1/span 3;
+}
+.interest
+{
+grid-row:7;
+grid-column:1/span 3;
+}
+.about>div{
+display:inline;
+}
+hr#ss {
+        height: 5px;
+        background-image: url('/home/aswathi/Downloads/images.jpeg');
+        background-position: center;
+        background-color: transparent;
+        border: none;
+        width: 25%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+       background-size: 50px 10px;
+
+       /*background-color:blue;*/
+    }
+hr#sss
+{
+ height: 5px;
+        background-image: url('/home/aswathi/Downloads/images.jpeg');
+        background-position: center;
+        background-color: transparent;
+        border: none;
+        width: 65%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+       background-size: 50px 10px;
+opacity:0.1;
+       /*background-color:blue;*/
+}
+/*.lan::after { 
+    content:"";
+    height:20px; 
+    width:100%; /* or i.e: 500px 
+    background-image:url('/home/aswathi/Downloads/images.jpeg');
+}*/
+div{
+display:inline;
+   /* text-align:justify;  
+    text-justify:inter-character;*/
+word-break: break-all;
+}
+
+hr {
+line-height: 0;
+display:inline-block;
+}
+span{
+font-size:20px;
+}
+.nat:after{
+content:" ";
+width:2%;
+padding-right: 0.5em;
+margin: 0.5em 0;
+}
+.dob:after{
+content:" ";
+width:5%;
+padding-right: 0em;
+margin: 0.5em 0;
+}
+ul.langlist li{
+list-style-type: none;
+ display:inline;
+}
+ul.langlist li{
+content:" ";
+width:10%;
+padding-right: 0.5em;
+margin: 0.5em 0;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="grid-container">
+
+  <div class="grid-item item1" style="text-align:center;">CV</div>
+  <div class="grid-item item2">ASWATHI P<br>FRESHER</div>
+  <div class="grid-item item3"><span>
+<hr id="ss" style="width:100px;"/><hr id="sss" style="width:100px;"/>
+
+</span></div><div class="grid-item item4;"> <span>
+<hr id="ss"/ style="width:50px;"><hr id="sss"/ style="width:50px;">
+
+</span></div>
+ 
+  
+<div class="grid-item contact">
+
+
+<div><h4 style="text-transform:uppercase; color:blue;font-weight: lighter;word-break: break-all;">contact</h4></div>
+<div  class="all" style="word-break: break-all;">
+<br><ul  class="cnctlist" style="list-style:none;word-break:break-all;">
+<li><span style="color:blue;">Address</span><span style="color:blue;">_</span><span style="word-break:break-all; ">Pavithralayam(HO),Vaikkilasseri(PO),<br>Vadakara,Calicut</span></span></li><br>
+<li><span style="color:blue;">Mobile</span><span style="color:blue;">_</span><span>8281963271</span></span></li><br>
+<li><span style="color:blue;">Email</span><span style="color:blue;">_</span><span>paswathipavi@gmail.com</span></span></li><br>
+<li><span style="color:blue;">Fb</span><span style="color:blue;">_</span><span>ss</span></span></li>
+
+</div>
+</div>
+<div class=" grid-item about">
+
+<div><h4 style="text-transform:uppercase; color:blue;font-weight: lighter;word-break: break-all;">about</h4></div><br>
+<div  class="all about" style="word-break: break-all;dispay:inline;">
+<div class="grid-item dob"><span style="font-size:20px;">Date of birth</span><span style="color:blue;font-size:20px;">_</span><span style="font-size:20px;">14/01/1996</span></div><div class="nat" style="align:center;"><span style="font-size:20px;">Nationality</span><span style="color:blue;font-size:20px;">_</span><span>Indian</span> </div><div class="sex" style="align:right;"><span style="font-size:20px;">Sex</span><span style="color:blue;font-size:20px;">_</span><span style="font-size:20px;">Female</span></div>
+<br><br><p style="font-size:20px;word-break:keep-all;">I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy environments and also within a team setting. </p>
+</div>
+</div>
+<div class="grid-item portfolio">
+<span>
+<hr id="ss"/><hr id="sss"/>
+
+</span>
+<div><h4 style="text-transform:uppercase; color:blue;font-weight: lighter;word-break: break-all;">portfolio</h4></div><br>
+<div  class="all" style="word-break: break-all;">
+<div><span>be</span><span style="color:blue;">_</span><span>ghsgfjhdgf</span></div>
+<div><span>web</span><span style="color:blue;">_</span><span>hfvdfh</span></div>
+</div>
+</div>
+<div class="grid-item experience">
+<span>
+<hr id="ss"/><hr id="sss"/>
+
+</span>
+<div><h4 style="text-transform:uppercase; color:blue;font-weight: lighter;word-break: break-all;">
+experience</h4></div><br>
+<div  class="all" style="word-break: break-all;">
+<span>No experience yet</span></div>
+</div>
+
+<div class="grid-item designskill">
+<span>
+<hr id="ss"/><hr id="sss"/>
+
+</span>
+<div><h4 style="text-transform:uppercase; color:blue;font-weight:lighter;word-break: break-all;">
+design skill</h4></div>
+<br><div  class="all" style="word-break: break-all;">
+<span>corparate idenity</span></span><span style="color:blue;">/</span><span><span>branding</span><span style="color:blue;">/</span><span>print design</span>
+</div>
+</div>
+<div class="grid-item education">
+<span>
+<hr id="ss"/><hr id="sss"/>
+
+</span><div><h4 style="text-transform:uppercase; color:blue;font-weight:lighter;word-break: break-all;">
+education</h4></div><br>
+<div  class="all" style="word-break: break-all;">
+<span style="color:blue;">#</span><span>Aug 2016>dec 2019</span><br>
+<span style="color:blue;">MCA</span><span>@CCSIT cu campus.calicut university</span>
+<br>
+<br>
+<span style="color:blue;">#</span><span>Jun 2013>Mar 2016</span><br>
+<span style="color:blue;">Bsc cs</span><span>@RSM SNDP Arts and Science college</span>
+<br>
+<br>
+<span style="color:blue;">#</span><span>Jun 2011>Mar 2013</span><br>
+<span style="color:blue;">+2 Science</span><span>@Memunda HSS Vadakara</span>
+<br>
+<br>
+<span style="color:blue;">#</span><span>Jun 2010>Mar 2011</span><br>
+<span style="color:blue;">SSLC</span><span>@GHSS Chorode</span>
+<br>
+</div>
+
+</div>
+
+<div class="grid-item softwareskills">
+
+<span>
+<hr id="ss"/><hr id="sss"/>
+
+</span><div><h4 style="text-transform:uppercase; color:blue;font-weight:lighter;word-break: break-all;">
+software skills</h4></div><br><div  class="all" style="word-break: break-all;"><span>
+
+<p style="word-break: break-all;"><abbr>Javascript</abbr><hr id="ss"/>
+
+</p><span> <pre></pre>
+
+
+<span><p style="word-break: break-all;">PHP<hr id="ss"/></p></span>
+<span><p style="word-break: break-all;">C<hr id="ss"/></p></span><pre></pre>
+<span><p style="word-break: break-all;">Mysql<hr id="ss"/></p></span>
+</div>
+</div>
+<div class="grid-item languages">
+<span>
+<hr id="ss"/><hr id="sss"/>
+
+</span><div><h4 style="text-transform:uppercase; color:blue;font-weight: lighter;word-break: break-all;">
+languages</h4>
+</div>
+<div class="all">
+<ul class="langlist" ><li style="font-size:20px;">Malayalam <span style="color:blue;">></span><span>Mother tonque</span></li> <li style="font-size:20px;">English <span style="color:blue;">></span><span>Intermeadiate</span></li>
+</div>
+</div>
+<div class="grid-item interest">
+<span>
+<hr id="ss"/><hr id="sss"/>
+
+</span><div><h4 style="text-transform:uppercase; color:blue;font-weight: lighter;word-break: break-all;">
+interest</h4></div><div  class="all" style="word-break: break-all;">
+<span >Travelling </span><span style="color:blue;">/</span><span>music</span> <span>Teaching</span><span style="color:blue;">/</span><span>Cinema</span></div>
+</div>
+</div>
+
+
+
+</body>
+</html>
